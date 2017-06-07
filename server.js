@@ -9,7 +9,7 @@ var Note = require("./models/Note.js");
 var Story = require("./models/Story.js");
 
 // Scraping tools
-var request = require("requrest");
+var request = require("request");
 var cheerio = require("cheerio");
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
