@@ -1,0 +1,30 @@
+body{
+  font-family: 'Patua One', cursive;
+}
+.jumbotron{
+  background-color: #00BFFF;
+}
+#displayBanner {
+    background-image: url("../images/newsPrint.jpg");
+    color: white;
+    height: 250px;
+}
+
+.card-img-top {
+  height: 140px;
+  width: 238px;
+}
+
+li {
+  font-size: 20px;
+}
+
+.title{
+    font-size: 25px;
+}
+
+.saveArticle {
+  background-color: #F8C471;
+  border-color: #F8C471;
+}
+
