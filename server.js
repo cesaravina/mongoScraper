@@ -51,7 +51,7 @@ db.once("open", function(){
 
 // App routes
 app.get("/", function(req, res){
-    var query = Story.find({}).sort({natural: -1}).limit(10);
+    var query = Story.find({}).sort({$natural: -1}).limit(10);
     query.exec(function(err, docs){
         if(err){
             throw error;
