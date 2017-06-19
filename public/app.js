@@ -1,7 +1,7 @@
 
 $(document).on("click", ".saveArticle", function(){
     var status = $(this).attr("data-status");
-    $(this).attr.("data-status", true)
+    $(this).attr("data-status", true)
     console.log(status);
 
     var thisId = $(this).attr("data-id");
@@ -9,7 +9,7 @@ $(document).on("click", ".saveArticle", function(){
 
     $.ajax({
         method: "POST",
-        url: "/updates/" + thidId,
+        url: "/updates/" + thisId,
         data: {
             saved: true
         }
@@ -36,7 +36,7 @@ $(document).on("click", ".removeFavorite", function(e){
     });
 });
 
-$(document).on("click", ".savedNotes", function(e){
+$(document).on("click", ".saveNotes", function(e){
 
     var thisId = $(this).attr("data-id");
     var showSection = "#" + thisId;
