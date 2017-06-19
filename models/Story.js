@@ -41,4 +41,4 @@ var StorySchema = new Schema({
 var Story = mongoose.model("Story", StorySchema);
 
 // Export the Story model
-module.export = Story
+module.exports = Story

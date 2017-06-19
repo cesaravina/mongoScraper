@@ -63,7 +63,7 @@ app.get("/", function(req, res){
 // Scrape NYT Sports articles
 app.get("/scrape", function (req, res){
     request("https://www.nytimes.com/section/sports", function(error, response, html){
-        var $ = cherrio.load(html);
+        var $ = cheerio.load(html);
 
         $("article.story").each(function(i, element){
             var result = {};
